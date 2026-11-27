@@ -34,7 +34,7 @@ CSV content stays in browser memory, with no analytics or upload endpoint. Refre
 11 Node tests passed and JavaScript syntax checked. Desktop browser rendered correctly; channel switch, first-quarter baseline and demo reset verified. Mobile CSS is implemented but has not been tested in a mobile viewport. Browser file import/download have not been end-to-end exercised; parser and export implementation checked in source. Demo vibration identifies six injected outliers. No real-machine dataset validated.
 
 ## GitHub Pages
-Upload the contents of `dist/` to the selected Pages publishing directory. Alternatively deploy `dist/` using your preferred static host. Repository: https://github.com/trustNOpeps/machinescope (private). Hosted application: https://machinescope-hamka.girlslovre.chatgpt.site (public).
+Upload the contents of `dist/` to the selected Pages publishing directory. Alternatively deploy `dist/` using your preferred static host. Repository: https://github.com/trustNOpeps/machinescope (public). Hosted application: https://machinescope-hamka.girlslovre.chatgpt.site (public).
 
 ## Rollback
 Restore a previous source commit and redeploy its matching static files. The app has no database or migration to reverse.
