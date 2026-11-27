@@ -28,13 +28,16 @@ CSV content stays in browser memory, with no analytics or upload endpoint. Refre
 - `dist/core.js`: CSV parser, robust statistics, synthetic generator
 - `dist/app.js`: interactions, chart and exports
 - `test.cjs`: executable regression checks
-- `.openai/hosting.json`: deployment identity
+- `.openai/hosting.json`: legacy hosting identity; not used by GitHub Pages
 
 ## Verification
 11 Node tests passed and JavaScript syntax checked. Desktop browser rendered correctly; channel switch, first-quarter baseline and demo reset verified. Mobile CSS is implemented but has not been tested in a mobile viewport. Browser file import/download have not been end-to-end exercised; parser and export implementation checked in source. Demo vibration identifies six injected outliers. No real-machine dataset validated.
 
 ## GitHub Pages
-Upload the contents of `dist/` to the selected Pages publishing directory. Alternatively deploy `dist/` using your preferred static host. Repository: https://github.com/trustNOpeps/machinescope (public). Hosted application: https://machinescope-hamka.girlslovre.chatgpt.site (public).
+Live application: https://trustnopeps.github.io/trustNOpeps/apps/machinescope/
+
+Canonical source: https://github.com/trustNOpeps/machinescope (public).
+The contents of `dist/` are published unchanged to `apps/machinescope/` on the `gh-pages` branch of `trustNOpeps/trustNOpeps`. GitHub Pages serves that existing portfolio branch. There is no build step. For updates, run the checks above, copy all four dist files into that publishing directory, commit and push, then verify the Pages deployment and public URL. Changes to this source repository alone do not automatically update the portfolio deployment.
 
 ## Rollback
 Restore a previous source commit and redeploy its matching static files. The app has no database or migration to reverse.
