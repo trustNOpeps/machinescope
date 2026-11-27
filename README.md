@@ -3,6 +3,8 @@ Machine Intelligence / Applied AI for Engineering Systems.
 
 A dependency-free browser-local condition analysis dashboard. Import CSV, choose a numeric sensor channel, inspect median/MAD anomaly scores, and export JSON reports or CSV anomalies. Demo data are deterministic synthetic signals, not measurements from a real machine.
 
+[Portfolio — Engineering](https://trustnopeps.github.io/trustNOpeps/#project-machinescope) · [Method & case study](https://github.com/trustNOpeps/trustNOpeps/blob/main/projects/machinescope.md)
+
 ## Run
 Open `dist/index.html` directly in a modern browser. No build, API key, account or installation required for the offline application. Alternatively run `python3 -m http.server 8000 --directory dist` and open localhost:8000.
 
@@ -32,7 +34,7 @@ CSV content stays in browser memory, with no analytics or upload endpoint. Refre
 11 Node tests passed and JavaScript syntax checked. Desktop browser rendered correctly; channel switch, first-quarter baseline and demo reset verified. Mobile CSS is implemented but has not been tested in a mobile viewport. Browser file import/download have not been end-to-end exercised; parser and export implementation checked in source. Demo vibration identifies six injected outliers. No real-machine dataset validated.
 
 ## GitHub Pages
-Upload the contents of `dist/` to the selected Pages publishing directory. Alternatively deploy `dist/` using your preferred static host. Repository: https://github.com/trustNOpeps/machinescope (private). Hosted application: https://machinescope-hamka.girlslovre.chatgpt.site (owner-private).
+Upload the contents of `dist/` to the selected Pages publishing directory. Alternatively deploy `dist/` using your preferred static host. Repository: https://github.com/trustNOpeps/machinescope (private). Hosted application: https://machinescope-hamka.girlslovre.chatgpt.site (public).
 
 ## Rollback
 Restore a previous source commit and redeploy its matching static files. The app has no database or migration to reverse.
